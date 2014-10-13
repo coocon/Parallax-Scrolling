@@ -87,4 +87,16 @@ $(document).ready(function(){
 			
 	});	// each data-type
 
+
+
+    $('#btn-submit').click(function () {
+        var value = $.trim($('#message').val());
+        if (value) {
+            var img = new Image();
+            var ps = encodeURIComponent(value);
+            var t = new Date().getTime();
+            img.src = "http://app.coocons.com/message?text=" + ps + '&rnd=' + t; 
+        }
+    });
+
 }); // document ready

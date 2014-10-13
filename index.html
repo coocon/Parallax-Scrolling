@@ -1,15 +1,12 @@
 <!doctype html>
-<html class="no-js" lang="en">
+<html class="no-js">
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-  <title>Parallax Scrolling Tutorial</title>
-  <meta name="description" content="How to create a parallax scrolling effect with jQuery, HTML and CSS">
-  <meta name="author" content="Richard Shepherd, Smashing Magazine">
+  <title>To see is to believe</title>
+  <meta name="description" content="when first see you, I know there is something growing up in my heart...">
 
-  <!-- Mmmmm, Google Web Fonts. That's a paddlin'. -->
-  <link href='http://fonts.googleapis.com/css?family=Lobster+Two:700&v2' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -20,24 +17,35 @@
 
 	<!-- Section #1 / Intro -->
 	<section id="first" class="story" data-speed="8" data-type="background">    	
-		<div class="smashinglogo" data-type="sprite" data-offsetY="100" data-Xposition="50%" data-speed="-2"></div>		
+		<div class="smashinglogo" data-type="sprite" data-offsetY="10" data-Xposition="5%" data-speed="-2"></div>		
+		<div class="smashinglogo2" data-type="sprite" data-offsetY="30" data-Xposition="50%" data-speed="-3"></div>		
 		<article>
-
-			<img src="images/tutorial-title.png" alt="tutorial-title" width="711" height="242" />
-			<p>Words and pictures by Richard Shepherd / Twitter: <a href="http://twitter.com/richardshepherd" target="_blank">@richardshepherd</a> / Web: <a href="http://richardshepherd.com">richardshepherd.com</a></p>
-			<p>GitHub: <a href="https://github.com/richardshepherd/Parallax-Scrolling/">Fork it here!</a></p>
-	    </article>
+			<img src="res/sprit/s1_text.png" alt="tutorial-title" width="711" height="242" />
+        </article>
+        <img class="img-block" src="res/sprit/me.jpg">
+        <div class="text-block">
+            <p>如果</p>
+            <p>从我降生</p>
+            <p>到我死去</p>
+            <p>你都不能算作我生命的惊喜</p>
+            <p>那么</p>
+            <p>我的生命</p>
+            <p>便没有其他的亮点</p>
+        </div>
 	</section>
 
 	<!-- Section #2 / Background Only -->
 	<section id="second" class="story" data-speed="4" data-type="background">
-		<article>
-			<h2>Background Only</h2>
-		    	<p>In this section we are sliding the background at a different speed to the rest of the page.</p>
-		    	<p>As this text box is scrolling at the same speed as the page, and faster than the background, it creates this lovely parallax effect.</p>
-		    	<p>You can find all the HTML, CSS and the all important JavaScript files over at <a href="https://github.com/richardshepherd/Parallax-Scrolling">GitHub</a> - so why don't you drop by for some hardcore forking action?</p>
-		    	<p>Backgrounds for this article were taken from the May/June 2011 Smashing Magazine Desktop backgrounds.</p>	
-		    	<p>Head back to <a href="http://coding.smashingmagazine.com/2011/07/12/behind-the-scenes-of-nike-better-world/">Smashing Magazine</a>, or hop on over to <a href="http://richardshepherd.com">RichardShepherd.com</a>.</p>		
+		<div class="img" data-type="sprite" data-offsetY="700" data-Xposition="700px" data-speed="2"></div>		
+		<article class="dark-text">
+		    	<p>如果</p>
+                <p>没有初次的</p>
+                <p>邂逅</p>
+                <p>我一定还活在</p>
+                <p>死寂的深海</p>
+		    	<p>看不到你的微笑</p>
+                <p>如同看不到</p>
+                <p>如火的朝阳</p>
 		</article>
 	</section>
 	
@@ -45,11 +53,14 @@
 	<section id="third" class="story" data-speed="6" data-type="background" data-offsetY="250">    	
 		<div class="photograph" data-type="sprite" data-offsetY="1250" data-Xposition="25%" data-speed="2"></div>
     	<article>
-    		<h2>Scrolling Sprites</h2>
-	    	<div class="textbox">    	
-		    	<p>The next step in your parallax scrolling adventure is to create some sprites!</p>
-		    	<p>I have cut out one of the photos in this background and use it as a sprite. It scrolls at a different speed to the background <i>and</i> the window, and it's this effect that's used so well on Nike Better World and other parallax sites..</p>
-		    	<p>Using too many sprites can slow down older computers, and you need to use some clever maths (and trial & error!) to work out their placement on the page.</p>
+	    	<div class="textbox dark-text">    	
+                <p>佛说:前生500次的回眸</p>
+                <p>才换来今生的一次擦肩而过</p>
+                <p>而我苦苦期盼着</p>
+                <p>宁愿用10000次的回眸相望</p>
+                <p>换得与你的相知相遇。</p>
+                <p>......</p>
+                <p>只是我们又有多少个花季可以等待?</p>
 		    </div>
     	</article>
 	</section>	
@@ -57,31 +68,37 @@
 
 	<!-- Section #4 / HTML5 Video -->
 	<section id="fourth" class="story" data-speed="8" data-type="background" data-offsetY="250">
+		<div class="photograph" data-type="sprite" data-offsetY="1750" data-Xposition="500px" data-speed="2"></div>
     	<article>
-    		<h2>HTML5 Video</h2>
+    		<h2>守望完满</h2>
 	    	<div class="textbox">    	
-		    	<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
-		    	<p>Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
-		    	<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. o.</p>
+		    	<p>也许我不是你理想的半径</p>
+                <p>画不出完美的圆环</p>
+		    	<p>只是，这一份小小的守望</p>
+		    	<p>便足以让我围绕圆心去拼搏</p>
+		    	<p>只为完满...</p>
 		    </div>
     	</article>
-		<video controls width="640" width="480" data-type="video" data-offsetY="2400" data-speed="1.5">
-			<source src="video/parallelparking.theora.ogv" type="video/ogg" />
-			<source src="video/parallelparking.mp4" type="video/mp4" />
-			<source src="video/parallelparking.webm" type="video/webm" />
-		</video>
 	</section>	
 
 	<!-- Section #5 / The End-->
 	<section id="theend" class="story" data-speed="8" data-type="background" data-offsetY="250">    	
 		<div class="byebye" data-type="sprite" data-offsetY="-1600" data-Xposition="50%" data-speed="-2"></div>	
+        <article>
+    		<h2>留言板</h2>
+	    	<div class="textbox">    	
+		    	<p></p>
+                <textarea id="message" placeholder="有什么想对我说的？"></textarea>
+                <p class="center"><button id="btn-submit">提交</button></p>
+		    </div>
+    	</article>
+
 	</section>
 	
   </div> <!-- // End of #main -->
 
 
 
-  <!-- Our Javascript, starting with jQuery -->
   <script src='js/libs/jquery-1.6.1.min.js'></script>
   <script src="js/script.js"></script>
   <!--[if lt IE 7 ]>
